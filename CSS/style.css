@@ -231,16 +231,24 @@ transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 .icons{
     margin-top: 5px;
     display: flex;
-    width: 70%;
+    width: 80%;
     justify-content: space-between;
 }
 .item-icon{
+    display: flex;
+    align-items: center;
     padding: 0.3rem;
 }
 .item-icon:hover{
     background-color: #3a3b3c69;
     border-radius: 20px;
     cursor: pointer;
+}
+
+.icon-gmail{
+    display: flex;
+    height: 2.3rem;
+    align-items: center;
 }
 .icon{
     padding: 0.4rem;
@@ -255,7 +263,63 @@ transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 .icon:hover{
    color: #278EA5;
 }
+.icon-gmail{
+position: relative;
+background: #3a3b3c;
+border: 1px solid #ddd;
+border-radius: 10px;
+display: flex;
+}
+.text{
+    background: #3a3b3c;
+    font-size: 18px;
+    color: #6b6b6b;
+    border: none;
+    outline: none;
+}
+.holi {
+    padding: 7px;
+    background: #555;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
 
+.holi:active {
+    background: #004f61;
+}
+
+.holi:before {
+    content: "Copied";
+    position: absolute;
+    top: -45px;
+    right: 0px;
+    background-color: #036f87;
+    padding: 8px 10px;
+    border-radius: 20px;
+    font-size: 15px;
+    display: none;
+}
+
+.holi:after {
+    content: "";
+    position: absolute;
+    top: -20px;
+    right: 25px;
+    width: 10px;
+    height: 10px;
+    background-color: #036f87;
+    transform: rotate(45deg);
+    display: none;
+}
+
+.holi.active:before,
+.holi.active:after {
+    display: block;
+}
 /*RESPOSIVE DESIGN */
 @media(max-width:992px){
     .navbar .links,

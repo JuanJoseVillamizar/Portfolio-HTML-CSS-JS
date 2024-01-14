@@ -90,3 +90,16 @@ function closeDropDownMenu() {
     dropDownMenu.classList.remove('open');
     toggleBtnIcon.classList = 'fa-solid fa-bars';
 }
+//ClipBoard
+const copytext = document.querySelector('.holi');
+document.getElementById('clipboard').onclick= async()=>{
+    try {
+        await navigator.clipboard.writeText('Juanjvs345@gmail.com')
+        copytext.classList.add("active");
+        setTimeout(() => {
+            copytext.classList.remove("active");
+        }, 2500);
+    } catch (error) {
+        console.log(error);
+    }
+}
