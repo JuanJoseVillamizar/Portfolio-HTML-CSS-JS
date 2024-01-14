@@ -1,0 +1,17 @@
+{
+    "navbar":{
+        "Home":"Inicio",
+        "About me":"Sobre mi",
+        "Projects":"Proyectos",
+        "Experience":"Experiencia",
+        "Contact me":"Contactame"
+    }, 
+    "profile":{
+        "Hello": "Hola a todos!, Soy Juan Villamizar",
+        "Available" :"Disponible para trabajar",
+        "Experience" :"+1 año de experiencia.",
+        "Rol": "Desarrollador Full-Stack.",
+        "Continuation": "Especializado en crear aplicaciones eficientes y seguras."
+        
+    }
+}

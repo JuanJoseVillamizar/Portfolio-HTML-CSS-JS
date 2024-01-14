@@ -1,0 +1,17 @@
+{
+    "navbar":{
+        "Home":"Home",
+        "About me":"About me",
+        "Projects":"Projects",
+        "Experience":"Experience",
+        "Contact me":"Contact me"
+    },
+    "profile":{
+        "Hello": "Hello there!, I am Juan Villamizar",
+        "Available" :"Available for work",
+        "Experience" :"+1 year of experience",
+        "Rol": "Full-stack developer.",
+        "Continuation": "Specialized in creating efficient and secure applications."
+        
+    }
+}
