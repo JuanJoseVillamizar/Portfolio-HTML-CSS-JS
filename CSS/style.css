@@ -7,6 +7,7 @@
 /* fondo*/
 body{
     background-color: #18191a; 
+
     /*  background-image: radial-gradient(ellipse at 50% -20%, rgba(41, 41, 47, 0.3), rgba(255, 255, 255, 0)); */
 }
 
@@ -25,6 +26,9 @@ a:hover{
 /*HEADER*/
 header{
     position: relative;
+    padding: 0 2rem;
+}
+.main{
     padding: 0 2rem;
 }
 .navbar{
@@ -362,6 +366,7 @@ display: flex;
     }
     .hero{
         height: calc(100vh - 150px);
+        width: 100%;
         text-align: center;
         align-items: center;
     }
