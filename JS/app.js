@@ -91,7 +91,7 @@ function closeDropDownMenu() {
     toggleBtnIcon.classList = 'fa-solid fa-bars';
 }
 //ClipBoard
-const copytext = document.querySelector('.holi');
+const copytext = document.querySelector('.clipboard');
 document.getElementById('clipboard').onclick= async()=>{
     try {
         await navigator.clipboard.writeText('Juanjvs345@gmail.com')

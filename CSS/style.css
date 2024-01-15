@@ -6,13 +6,8 @@
 }
 /* fondo*/
 body{
-    height: 100vh;
     background-color: #18191a; 
     /*  background-image: radial-gradient(ellipse at 50% -20%, rgba(41, 41, 47, 0.3), rgba(255, 255, 255, 0)); */
-   
-}
-main{
-    margin: 0 30vh ;
 }
 
 li{
@@ -158,7 +153,7 @@ transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .dropdown_menu.open{
-    height: 250px;
+    height: 190px;
 }
 .dropdown_menu li{
     padding: 0.7rem;
@@ -174,8 +169,12 @@ transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 /*HERO*/
 .hero{
     height: calc(100vh - 60px);
+    width: 67%;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
     text-align: center;
     color: #fff;
@@ -183,7 +182,7 @@ transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
 .profile{
     display: flex;
-    flex-direction: column;
+    flex-direction:column;
     text-align: left
 }
 .profile h1{
@@ -198,7 +197,9 @@ transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     margin-bottom: 10px;
 }
 .badge{
-    z-index: 1;
+    height: fit-content;
+    display: flex;
+    align-items: center;
     margin-left: 10px;
     bottom: 25px;
     font-size: 1.4rem;
@@ -206,7 +207,7 @@ transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     color: #004f61;
     position: relative;
     background-color: #fff;
-    padding: 4px 12px;
+    padding: 2px 6px;
     border-radius: 5px;
     box-shadow: 3px -2px 24px -10px rbga(0,0,0,0 0.75);
 }
@@ -229,6 +230,7 @@ transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 .icons{
     margin-top: 5px;
+    box-sizing: border-box;
     display: flex;
     width: 80%;
     justify-content: space-between;
@@ -242,12 +244,6 @@ transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     background-color: #3a3b3c69;
     border-radius: 20px;
     cursor: pointer;
-}
-
-.icon-gmail{
-    display: flex;
-    height: 2.3rem;
-    align-items: center;
 }
 .icon{
     padding: 0.4rem;
@@ -263,6 +259,9 @@ transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
    color: #278EA5;
 }
 .icon-gmail{
+display: flex;
+height: 2.3rem;
+align-items: center;
 position: relative;
 background: #3a3b3c;
 border: 1px solid #ddd;
@@ -276,7 +275,7 @@ display: flex;
     border: none;
     outline: none;
 }
-.holi {
+.clipboard {
     padding: 7px;
     background: #555;
     color: #fff;
@@ -287,11 +286,11 @@ display: flex;
     cursor: pointer;
 }
 
-.holi:active {
+.clipboard:active {
     background: #004f61;
 }
 
-.holi:before {
+.clipboard:before {
     content: "Copied";
     position: absolute;
     top: -45px;
@@ -303,7 +302,7 @@ display: flex;
     display: none;
 }
 
-.holi:after {
+.clipboard:after {
     content: "";
     position: absolute;
     top: -20px;
@@ -315,22 +314,74 @@ display: flex;
     display: none;
 }
 
-.holi.active:before,
-.holi.active:after {
+.clipboard.active:before,
+.clipboard.active:after {
     display: block;
 }
 /*RESPOSIVE DESIGN */
+@media(max-width:1506px){
+    .profile h1{
+       font-size: 2rem;
+    }
+    
+    .more-information h2{
+        font-size: 1.6rem;
+    }
+}
+@media(max-width:1080px){
+    .profile h1{
+       font-size: 1.79rem;
+    }
+    .badge{
+        font-size: 1.3rem;
+    }
+
+    .profile h2{
+        font-size: 1.5rem;
+    }
+  
+}
 @media(max-width:992px){
+   
     .navbar .links,
     .navbar .action-btn{
         display: none;
+    }
+     .badge{
+        display: block;
+        bottom: 0;
     }
     .toggle_btn{
         display: block;
     }
     .dropdown_menu{
+        left: 2rem;
+        top: 90px;
         display: block;
+        width: unset;
     }
+    .hero{
+        height: calc(100vh - 150px);
+        text-align: center;
+        align-items: center;
+    }
+    .lptm{
+        flex-direction: column;
+    }
+    .profile{
+        align-items: center;
+        text-align: center;
+    }
+
+    .icons{
+        flex-direction: column;
+    }
+    .profile h2{
+        display: inline;
+        align-self: center;
+      
+    }
+    
 }
 @media(max-width:576px){
     .dropdown_menu{
@@ -338,4 +389,5 @@ display: flex;
         top: 90px;
         width: unset;
     }
+    
 }
